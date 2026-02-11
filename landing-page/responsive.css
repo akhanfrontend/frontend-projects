@@ -1,1 +1,229 @@
+@media (max-width: 1024px) {
+  .navbar ul {
+    display: none;
+  }
 
+  .mobile-menu {
+    display: flex;
+  }
+
+  .navbar ul.active {
+    padding: 20px;
+    background-color: #0f172a;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .navbar ul li a{
+    padding-top: 8px;
+    font-size: 0.9rem;
+
+  }
+}
+
+@media (max-width: 786px) {
+  .content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buy{
+    font-size: 1.1rem;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .left-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .banner-img{
+    width: 70%;
+  }
+
+  .left-side p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .two-btn {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .primary-btn a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 12px 26px;
+  }
+
+  .secondary-btn a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 12px 26px;
+  }
+
+.inner-boxe-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes{
+    width: 80%;
+}
+
+
+h3{
+    font-size: 0.9rem;
+
+}
+
+
+.boxes p{
+    font-size: 0.8rem;
+}
+
+h2{
+    font-size: 1.5rem;
+
+}
+
+.supportLine{
+    font-size: 0.8rem;
+
+}
+
+.inner-boxe-banner{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.icon-img{
+    width: 20%;
+}
+
+.spaces-content{
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+#space-head{
+    font-size: 1.5rem; 
+
+}
+
+.reviews{
+    padding: 10px;
+}
+
+#reviews{
+    margin-top: -80px  ;}
+
+.reviews-grid{
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.final-buy-content h2{
+    font-size: 1.5rem;
+
+}
+
+.final-buy-content p{
+
+    font-size: 0.9rem;
+
+}
+
+.buy-btn{
+  font-size: 0.9rem;
+}
+
+
+}
+
+
+@media (min-width:787px) and (max-width:1024px){
+
+    .content{
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .left-side{
+        width: 40%;
+    }
+
+    .right-side{
+        width: 60%;
+        display: flex;
+        justify-content:center;
+
+    }
+
+    .banner-img{
+        width: 70%;
+    }
+
+    #features{
+        padding: 10px;
+    }
+
+    
+.reviews{
+    padding: 10px;
+}
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+
+
+    .reviews{
+    padding: 10px;
+}
+
+  #features{
+        padding: 10px;
+    }
+
+    .spaces-content{
+        padding: 10px;
+    }
+
+}
