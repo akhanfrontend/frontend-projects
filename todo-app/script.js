@@ -1,5 +1,5 @@
 
-// adding add and alert function 
+// adding add and alert function
 
 document.getElementById("btn").onclick = function () {
     
