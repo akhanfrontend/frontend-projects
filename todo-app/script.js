@@ -1,21 +1,30 @@
 
-// adding add function and alert
+// adding add and alert function 
 
 document.getElementById("btn").onclick = function () {
-
+    
     let val = document.getElementById("inputBox").value;
 
     if(val === ""){
-        alert ("Request you to please add task")
-        return;
+        alert ("Please add your task first");
+        return ;
     }
-    let li = document.createElement("li");
 
-    li.innerText = val;
-    
+    let li = document.createElement("li");
+    li.innerHTML = val;
+
+    let delBtn = document.createElement("button");
+    delBtn.innerText = "❌"
+
+    li.appendChild(delBtn);
+
+    delBtn.onclick = function (){
+        li.remove ();
+    }
 
     document.getElementById("taskList").appendChild(li);
-    
 
     document.getElementById("inputBox").value = "";
-}
+
+
+};
