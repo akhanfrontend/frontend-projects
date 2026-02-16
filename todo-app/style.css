@@ -1,1 +1,129 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Main Wrapper */
+.main-container{
+    width: 100%;
+    padding: 40px 20px;
+    margin: 150px auto;
+}
+
+
+/* Center Card */
+.inner-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Heading Section */
+.main-head{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+span{
+    display: block;
+    color: rgba(255,255,255,0.8);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Input Section */
+.input-box{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 1;
+    width: 100% ;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+}
+
+input::placeholder{
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+/* Button */
+button{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* Result Section */
+
+.result ul {
+    list-style: none;
+    padding: 0;
+}
+
+.result li {
+    background: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 85%;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 786){
+    .input-box{
+        flex-direction: row;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .result li{
+        width: 50%;
+    }
+}
